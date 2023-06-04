@@ -11,7 +11,7 @@ namespace task131
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// Г‘ГўГ®Г¤ГЄГ  Г¤Г«Гї MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -20,13 +20,13 @@ namespace task131
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: Г¤Г®ГЎГ ГўГјГІГҐ ГЄГ®Г¤ ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г 
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// ГЋГ±ГўГ®ГЎГ®Г¤ГЁГІГј ГўГ±ГҐ ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГ¬Г»ГҐ Г°ГҐГ±ГіГ°Г±Г».
 		/// </summary>
 		~MyForm()
 		{
@@ -46,14 +46,14 @@ namespace task131
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// ГЋГЎГїГ§Г ГІГҐГ«ГјГ­Г Гї ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г Гї ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г .
 		/// </summary>
 		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// Г’Г°ГҐГЎГіГҐГ¬Г»Г© Г¬ГҐГІГ®Г¤ Г¤Г«Гї ГЇГ®Г¤Г¤ГҐГ°Г¦ГЄГЁ ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г  вЂ” Г­ГҐ ГЁГ§Г¬ГҐГ­ГїГ©ГІГҐ 
+		/// Г±Г®Г¤ГҐГ°Г¦ГЁГ¬Г®ГҐ ГЅГІГ®ГЈГ® Г¬ГҐГІГ®Г¤Г  Г± ГЇГ®Г¬Г®Г№ГјГѕ Г°ГҐГ¤Г ГЄГІГ®Г°Г  ГЄГ®Г¤Г .
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -73,7 +73,7 @@ namespace task131
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(161, 23);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"Старт!";
+			this->button1->Text = L"Г‘ГІГ Г°ГІ!";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
@@ -84,7 +84,7 @@ namespace task131
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(58, 13);
 			this->label1->TabIndex = 1;
-			this->label1->Text = L"Введите n";
+			this->label1->Text = L"Г‚ГўГҐГ¤ГЁГІГҐ n";
 			// 
 			// textBox1
 			// 
@@ -103,7 +103,7 @@ namespace task131
 			this->groupBox1->Size = System::Drawing::Size(177, 82);
 			this->groupBox1->TabIndex = 3;
 			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"Ввод";
+			this->groupBox1->Text = L"Г‚ГўГ®Г¤";
 			// 
 			// listView1
 			// 
@@ -118,11 +118,11 @@ namespace task131
 			// 
 			// columnHeader1
 			// 
-			this->columnHeader1->Text = L"Число 1";
+			this->columnHeader1->Text = L"Г—ГЁГ±Г«Г® 1";
 			// 
 			// columnHeader2
 			// 
-			this->columnHeader2->Text = L"Число 2";
+			this->columnHeader2->Text = L"Г—ГЁГ±Г«Г® 2";
 			// 
 			// MyForm
 			// 
@@ -139,36 +139,36 @@ namespace task131
 
 		}
 #pragma endregion
-		//Функция скажет, простое ли число или нет
+		//Г”ГіГ­ГЄГ¶ГЁГї Г±ГЄГ Г¦ГҐГІ, ГЇГ°Г®Г±ГІГ®ГҐ Г«ГЁ Г·ГЁГ±Г«Г® ГЁГ«ГЁ Г­ГҐГІ
 		bool isPrime(int n)
 		{
-			// если n > 1
+			// ГҐГ±Г«ГЁ n > 1
 			if (n > 1)
 			{
-				// в цикле перебираем числа от 2 до n - 1
+				// Гў Г¶ГЁГЄГ«ГҐ ГЇГҐГ°ГҐГЎГЁГ°Г ГҐГ¬ Г·ГЁГ±Г«Г  Г®ГІ 2 Г¤Г® n - 1
 				for (int i = 2; i < n; i++)
-					if (n % i == 0) // если n делится без остатка на i - возвращаем false (число не простое)
+					if (n % i == 0) // ГҐГ±Г«ГЁ n Г¤ГҐГ«ГЁГІГ±Гї ГЎГҐГ§ Г®Г±ГІГ ГІГЄГ  Г­Г  i - ГўГ®Г§ГўГ°Г Г№Г ГҐГ¬ false (Г·ГЁГ±Г«Г® Г­ГҐ ГЇГ°Г®Г±ГІГ®ГҐ)
 						return false;
 
-				// если программа дошла до данного оператора, то возвращаем true (число простое) - проверка пройдена
+				// ГҐГ±Г«ГЁ ГЇГ°Г®ГЈГ°Г Г¬Г¬Г  Г¤Г®ГёГ«Г  Г¤Г® Г¤Г Г­Г­Г®ГЈГ® Г®ГЇГҐГ°Г ГІГ®Г°Г , ГІГ® ГўГ®Г§ГўГ°Г Г№Г ГҐГ¬ true (Г·ГЁГ±Г«Г® ГЇГ°Г®Г±ГІГ®ГҐ) - ГЇГ°Г®ГўГҐГ°ГЄГ  ГЇГ°Г®Г©Г¤ГҐГ­Г 
 				return true;
 			}
-			else // иначе возвращаем false (число не простое)
+			else // ГЁГ­Г Г·ГҐ ГўГ®Г§ГўГ°Г Г№Г ГҐГ¬ false (Г·ГЁГ±Г«Г® Г­ГҐ ГЇГ°Г®Г±ГІГ®ГҐ)
 				return false;
 		}
 
-		int n; //Кол-во пар простых чисел
+		int n; //ГЉГ®Г«-ГўГ® ГЇГ Г° ГЇГ°Г®Г±ГІГ»Гµ Г·ГЁГ±ГҐГ«
 		int counter = 0;
-		int prev_num = 0, next_num = 1; //Да
+		int prev_num = 0, next_num = 1; //Г„Г 
 		int i = 0;
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		try {
 			n = Convert::ToInt32(textBox1->Text);
 		}
 		catch (FormatException^ ex) {
-			MessageBox::Show("Неправильный ввод", "Ошибка", MessageBoxButtons::OK);
+			MessageBox::Show("ГЌГҐГЇГ°Г ГўГЁГ«ГјГ­Г»Г© ГўГўГ®Г¤", "ГЋГёГЁГЎГЄГ ", MessageBoxButtons::OK);
 		}
-		//Ищем простые числа
+		//Г€Г№ГҐГ¬ ГЇГ°Г®Г±ГІГ»ГҐ Г·ГЁГ±Г«Г 
 		while (counter != n) {
 			prev_num++;
 			if (isPrime(prev_num) && isPrime(prev_num + 2)) {
