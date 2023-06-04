@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include <cctype>//для использования isalpha()
+#include <cctype>//Г¤Г«Гї ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГї isalpha()
 using namespace std;
 using namespace System;
 
@@ -15,7 +15,7 @@ namespace task330 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// Г‘ГўГ®Г¤ГЄГ  Г¤Г«Гї MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -24,13 +24,13 @@ namespace task330 {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: Г¤Г®ГЎГ ГўГјГІГҐ ГЄГ®Г¤ ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г 
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// ГЋГ±ГўГ®ГЎГ®Г¤ГЁГІГј ГўГ±ГҐ ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГ¬Г»ГҐ Г°ГҐГ±ГіГ°Г±Г».
 		/// </summary>
 		~MyForm()
 		{
@@ -49,14 +49,14 @@ namespace task330 {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// ГЋГЎГїГ§Г ГІГҐГ«ГјГ­Г Гї ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г Гї ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г .
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// Г’Г°ГҐГЎГіГҐГ¬Г»Г© Г¬ГҐГІГ®Г¤ Г¤Г«Гї ГЇГ®Г¤Г¤ГҐГ°Г¦ГЄГЁ ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г  вЂ” Г­ГҐ ГЁГ§Г¬ГҐГ­ГїГ©ГІГҐ 
+		/// Г±Г®Г¤ГҐГ°Г¦ГЁГ¬Г®ГҐ ГЅГІГ®ГЈГ® Г¬ГҐГІГ®Г¤Г  Г± ГЇГ®Г¬Г®Г№ГјГѕ Г°ГҐГ¤Г ГЄГІГ®Г°Г  ГЄГ®Г¤Г .
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -83,7 +83,7 @@ namespace task330 {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(120, 13);
 			this->label1->TabIndex = 1;
-			this->label1->Text = L"Введите предложение";
+			this->label1->Text = L"Г‚ГўГҐГ¤ГЁГІГҐ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ";
 			// 
 			// button1
 			// 
@@ -91,7 +91,7 @@ namespace task330 {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(319, 23);
 			this->button1->TabIndex = 2;
-			this->button1->Text = L"Начать!";
+			this->button1->Text = L"ГЌГ Г·Г ГІГј!";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
@@ -110,7 +110,7 @@ namespace task330 {
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(207, 13);
 			this->label3->TabIndex = 4;
-			this->label3->Text = L"Слова, которые состоят из тех же букв";
+			this->label3->Text = L"Г‘Г«Г®ГўГ , ГЄГ®ГІГ®Г°Г»ГҐ Г±Г®Г±ГІГ®ГїГІ ГЁГ§ ГІГҐГµ Г¦ГҐ ГЎГіГЄГў";
 			// 
 			// richTextBox2
 			// 
@@ -160,34 +160,34 @@ namespace task330 {
 			String^ bstr = Convert::ToString(richTextBox1->Text);
 			MarshalString(bstr, str);
 			int i = 0;
-			//в след. цикле заносим первое слово в переменную tmp
-			while (tmp.empty())//пока в переменной нет никакого значения
-				if (isalpha(str[i]))//если очередной символ - буква,то
-					while (i < str.size() && isalpha(str[i]))//пока не конец строки и пока идут буквы
+			//Гў Г±Г«ГҐГ¤. Г¶ГЁГЄГ«ГҐ Г§Г Г­Г®Г±ГЁГ¬ ГЇГҐГ°ГўГ®ГҐ Г±Г«Г®ГўГ® Гў ГЇГҐГ°ГҐГ¬ГҐГ­Г­ГіГѕ tmp
+			while (tmp.empty())//ГЇГ®ГЄГ  Гў ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г®Г© Г­ГҐГІ Г­ГЁГЄГ ГЄГ®ГЈГ® Г§Г­Г Г·ГҐГ­ГЁГї
+				if (isalpha(str[i]))//ГҐГ±Г«ГЁ Г®Г·ГҐГ°ГҐГ¤Г­Г®Г© Г±ГЁГ¬ГўГ®Г« - ГЎГіГЄГўГ ,ГІГ®
+					while (i < str.size() && isalpha(str[i]))//ГЇГ®ГЄГ  Г­ГҐ ГЄГ®Г­ГҐГ¶ Г±ГІГ°Г®ГЄГЁ ГЁ ГЇГ®ГЄГ  ГЁГ¤ГіГІ ГЎГіГЄГўГ»
 					{
-						tmp.append(1, str[i]);//заносим очередной символ в tmp
-						++i;//идем по строке
+						tmp.append(1, str[i]);//Г§Г Г­Г®Г±ГЁГ¬ Г®Г·ГҐГ°ГҐГ¤Г­Г®Г© Г±ГЁГ¬ГўГ®Г« Гў tmp
+						++i;//ГЁГ¤ГҐГ¬ ГЇГ® Г±ГІГ°Г®ГЄГҐ
 					}
-				else ++i;//иначе, идем дальше по строке
-			bool f;//создаем логическую переменную f
-			while (i < str.size())//пока счетчик не дошел до конца строки
+				else ++i;//ГЁГ­Г Г·ГҐ, ГЁГ¤ГҐГ¬ Г¤Г Г«ГјГёГҐ ГЇГ® Г±ГІГ°Г®ГЄГҐ
+			bool f;//Г±Г®Г§Г¤Г ГҐГ¬ Г«Г®ГЈГЁГ·ГҐГ±ГЄГіГѕ ГЇГҐГ°ГҐГ¬ГҐГ­Г­ГіГѕ f
+			while (i < str.size())//ГЇГ®ГЄГ  Г±Г·ГҐГІГ·ГЁГЄ Г­ГҐ Г¤Г®ГёГҐГ« Г¤Г® ГЄГ®Г­Г¶Г  Г±ГІГ°Г®ГЄГЁ
 			{
-				if (isalpha(str[i]))//если очередной символ - буква
+				if (isalpha(str[i]))//ГҐГ±Г«ГЁ Г®Г·ГҐГ°ГҐГ¤Г­Г®Г© Г±ГЁГ¬ГўГ®Г« - ГЎГіГЄГўГ 
 				{
-					f = true;//присваем f значение "истина"
-					temp.erase(0, temp.length());//очищаем переменную для хранения слов из строки
-					while (i < str.size() && isalpha(str[i]))//пока не конец строки и пока идут буквы
+					f = true;//ГЇГ°ГЁГ±ГўГ ГҐГ¬ f Г§Г­Г Г·ГҐГ­ГЁГҐ "ГЁГ±ГІГЁГ­Г "
+					temp.erase(0, temp.length());//Г®Г·ГЁГ№Г ГҐГ¬ ГЇГҐГ°ГҐГ¬ГҐГ­Г­ГіГѕ Г¤Г«Гї ГµГ°Г Г­ГҐГ­ГЁГї Г±Г«Г®Гў ГЁГ§ Г±ГІГ°Г®ГЄГЁ
+					while (i < str.size() && isalpha(str[i]))//ГЇГ®ГЄГ  Г­ГҐ ГЄГ®Г­ГҐГ¶ Г±ГІГ°Г®ГЄГЁ ГЁ ГЇГ®ГЄГ  ГЁГ¤ГіГІ ГЎГіГЄГўГ»
 					{
-						temp.append(1, str[i]);//формируем слово
-						if (tmp.find(str[i]) == -1)//если в первом слове нет какой-либо буквы из слова(по которому в данный момент идем)
-							f = false;//присваиваем f значение "ложь"
-						++i;//идем по строке
+						temp.append(1, str[i]);//ГґГ®Г°Г¬ГЁГ°ГіГҐГ¬ Г±Г«Г®ГўГ®
+						if (tmp.find(str[i]) == -1)//ГҐГ±Г«ГЁ Гў ГЇГҐГ°ГўГ®Г¬ Г±Г«Г®ГўГҐ Г­ГҐГІ ГЄГ ГЄГ®Г©-Г«ГЁГЎГ® ГЎГіГЄГўГ» ГЁГ§ Г±Г«Г®ГўГ (ГЇГ® ГЄГ®ГІГ®Г°Г®Г¬Гі Гў Г¤Г Г­Г­Г»Г© Г¬Г®Г¬ГҐГ­ГІ ГЁГ¤ГҐГ¬)
+							f = false;//ГЇГ°ГЁГ±ГўГ ГЁГўГ ГҐГ¬ f Г§Г­Г Г·ГҐГ­ГЁГҐ "Г«Г®Г¦Гј"
+						++i;//ГЁГ¤ГҐГ¬ ГЇГ® Г±ГІГ°Г®ГЄГҐ
 					}
-					if (f)//если слово состоит из тех же букв что и первое(которое в tmp)
-						//cout << temp << endl;//выводим его
+					if (f)//ГҐГ±Г«ГЁ Г±Г«Г®ГўГ® Г±Г®Г±ГІГ®ГЁГІ ГЁГ§ ГІГҐГµ Г¦ГҐ ГЎГіГЄГў Г·ГІГ® ГЁ ГЇГҐГ°ГўГ®ГҐ(ГЄГ®ГІГ®Г°Г®ГҐ Гў tmp)
+						//cout << temp << endl;//ГўГ»ГўГ®Г¤ГЁГ¬ ГҐГЈГ®
 						richTextBox2->Text = gcnew System::String(temp.c_str());
 				}
-				else ++i;//иначе, идем дальше по строке
+				else ++i;//ГЁГ­Г Г·ГҐ, ГЁГ¤ГҐГ¬ Г¤Г Г«ГјГёГҐ ГЇГ® Г±ГІГ°Г®ГЄГҐ
 			}
 		}
 	};
